@@ -1,0 +1,40 @@
+1. Define Linux Distribution: 
+a) lsb_release -a > explore_system.txt
+
+	or 
+
+b) cat /etc/os-release > explore_system_v2.txt
+
+2. List of running processes:
+a) 	ps -aux 	# for all users
+   	ps 		# for current user	
+
+b) 	top		# show resource usage by process 
+
+
+
+3. List of services on your system:
+a) 
+	systemctl list-units --type=service --all
+
+b)
+	systemctl list-unit-files --type=service
+
+
+4. Size of file system/folder
+4.1 to define free space in filesystem:
+a) 
+	df -Th
+
+4.2 To define folder size:
+
+	du -sh /root
+or 
+	du -h /root
+
+5. Define location of binaries:
+	whereis vim
+	which wim
+	type -a vim
+
+ 
